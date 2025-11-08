@@ -59,7 +59,7 @@ $ git config --global user.name "stivuzoh"
 $ git config --global user.email "stephenuzomawasaki@yahoo.com"
 $ git commit -m "Initial commit with basic e-commerce site structure"
 ```
-![Step 6](Step6%20Credentials%20added%20and%20file%20commited.pngpng)
+![Step 6](Step6%20Credentials%20added%20and%20file%20commited.png)
 Initial commit created with 35 files
 
 ---
@@ -69,14 +69,14 @@ Initial commit created with 35 files
 $ git remote add origin https://github.com/stivuzoh/MarketPeak-E-Commerce
 $ git push -u origin master
 ```
-![Step 7](Step7%20file%20pushed%20to%20github.pngpng)
+![Step 7](Step7%20file%20pushed%20to%20github.png)
 Code successfully pushed to GitHub repository
 
 ---
 
 ## 🖥️ Step 8: Launch AWS EC2 Instance 🌐
 Launched EC2 instance with key pair: `devops.pem`
-![Step 8](Step8%20aws%20instance%20launched.pngpng)
+![Step 8](Step8%20aws%20instance%20launched.png)
 AWS instance ready for connection
 
 ---
@@ -85,7 +85,7 @@ AWS instance ready for connection
 ```bash
 $ ssh -i "devops.pem" ec2-user@ec2-18-218-122-122.us-east-2.compute.amazonaws.com
 ```
-![Step 9](Step9%20Successfully%20connected%20online%20using%20my%20ssh%20key.pngpng)
+![Step 9](Step9%20Successfully%20connected%20online%20using%20my%20ssh%20key.png)
 Successfully connected to EC2 instance
 
 ---
@@ -94,14 +94,14 @@ Successfully connected to EC2 instance
 ```bash
 $ ssh-keygen
 ```
-![Step 10](Step10%20ssh%20keypair%20generated.pngpng)
+![Step 10](Step10%20ssh%20keypair%20generated.png)
 SSH key pair generated for GitHub authentication
 
 ---
 
 ## 🔗 Step 11: Add SSH Key to GitHub 📝
 Added public key to GitHub SSH keys section  
-![Step 11](Step11%20SSH%20Keypair%20added%20to%20githup.pngpng)
+![Step 11](Step11%20SSH%20Keypair%20added%20to%20githup.png)
 SSH key configured for secure GitHub access
 
 ---
@@ -110,7 +110,7 @@ SSH key configured for secure GitHub access
 ```bash
 $ git clone git@github.com:stivuzoh/MarketPeak-E-Commerce.git
 ```
-![Step 12](Step12%20Repo%20cloned.pngpng)
+![Step 12](Step12%20Repo%20cloned.png)
 Repository cloned to EC2 instance
 
 ---
@@ -121,7 +121,7 @@ $ sudo yum install httpd -y
 $ sudo systemctl start httpd
 $ sudo systemctl enable httpd
 ```
-![Step 13](Step13%20Apache%20web%20server%20installed.pngpng)
+![Step 13](Step13%20Apache%20web%20server%20installed.png)
 Apache web server installed and activated
 
 ---
@@ -132,14 +132,14 @@ $ sudo rm -rf /var/www/html/*
 $ sudo cp -r ~/MarketPeak-E-Commerce/* /var/www/html/
 $ sudo systemctl reload httpd
 ```
-![Step 14](Step14%20httpd%20file%20copied.pngpng)
+![Step 14](Step14%20httpd%20file%20copied.png)
 Website files deployed to web server directory
 
 ---
 
 ## 🌐 Step 15: Verify Website Live ✅
 Website accessible via browser  
-![Step 15](Step15%20web%20picture%20from%20browser.pngpng)
+![Step 15](Step15%20web%20picture%20from%20browser.png)
 E-commerce website successfully deployed and live
 
 ---
@@ -149,7 +149,7 @@ E-commerce website successfully deployed and live
 $ git checkout -b development
 $ git status
 ```
-![Step 16](Step16%20Git%20branch%20created%20with%20untracked%20files.pngpng)
+![Step 16](Step16%20Git%20branch%20created%20with%20untracked%20files.png)
 Development branch created with file changes
 
 ---
@@ -159,14 +159,14 @@ Development branch created with file changes
 $ git add .
 $ git commit -m "Add new features or fix bugs"
 ```
-![Step 17](Step17%20files%20commited.pngpng)
+![Step 17](Step17%20files%20commited.png)
 Changes committed to development branch
 
 ---
 
 ## 🔄 Step 18: Create Pull Request on GitHub 🤝
 Merged development branch to master via GitHub PR  
-![Step 18](Step18%20Pull%20request%20and%20merged%20in%20Github.pngpng)
+![Step 18](Step18%20Pull%20request%20and%20merged%20in%20Github.png)
 Pull request successfully merged
 
 ---
@@ -176,7 +176,7 @@ Pull request successfully merged
 $ git checkout master
 $ git merge development
 ```
-![Step 19](Step19%20File%20merged%20on%20cli.pngpng)
+![Step 19](Step19%20File%20merged%20on%20cli.png)
 Changes merged locally using fast-forward
 
 ---
@@ -185,7 +185,7 @@ Changes merged locally using fast-forward
 ```bash
 $ git push origin development
 ```
-![Step 20](Step20%20File%20pushed%20to%20github.pngpng)
+![Step 20](Step20%20File%20pushed%20to%20github.png)
 Development branch pushed to remote
 
 ---
@@ -195,7 +195,7 @@ Development branch pushed to remote
 $ git pull origin master
 $ sudo systemctl reload httpd
 ```
-![Step 21](Step21%20Final%20push%20to%20github.pngpng)
+![Step 21](Step21%20Final%20push%20to%20github.png)
 Latest changes pulled and web server reloaded
 
 ---
